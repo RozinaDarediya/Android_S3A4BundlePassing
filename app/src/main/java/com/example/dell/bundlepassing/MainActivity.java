@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
 
+
+//  the user name on next screen using bundle passing if the user has entered correct id and password
+
 public class MainActivity extends Activity implements OnClickListener {
 
     EditText editTextName;
@@ -30,6 +33,8 @@ public class MainActivity extends Activity implements OnClickListener {
 
     }
 
+        // first compare the entered name and password and the data is correct then using intent it will
+        // redirect to next activity carring name of user using bundle.
 
     @Override
     public void onClick(View v) {

@@ -17,6 +17,8 @@ public class Display  extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display);
 
+        // user name is fetched using bundle and set the text to textview
+
         Bundle bundle1 = getIntent().getExtras();
         textView = (TextView) findViewById(R.id.nameText);
         textView.setText(bundle1.getCharSequence("name"));
